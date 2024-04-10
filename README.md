@@ -24,7 +24,10 @@
 1. このリポジトリをクローンまたはダウンロードします。
 2. プロジェクトのディレクトリに移動します。
 3. 必要なPythonライブラリをインストールします。
+
+```python
 pip install -r requirements.txt
+```
 
 4. imagenet_class_index.jsonをダウンロードし、プロジェクトのルートディレクトリに配置します。
 - ダウンロードリンク: [imagenet_class_index.json](https://github.com/raghakot/keras-vis/blob/master/resources/imagenet_class_index.json)
@@ -32,9 +35,11 @@ pip install -r requirements.txt
 5. LINE Developersコンソールで新しいBOTを作成し、チャネルアクセストークンとチャネルシークレットを取得します。
 
 6. app.pyファイルを開き、チャネルアクセストークンとチャネルシークレットを設定します。
+
 ```python
 line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
 handler = WebhookHandler('YOUR_CHANNEL_SECRET')
+```
 
 7. app.pyファイルを開き、チャネルアクセストークンとチャネルシークレットを設定します。
 python app.py
