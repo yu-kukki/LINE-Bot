@@ -20,8 +20,8 @@ logging.basicConfig(
     ]
 )
 
-line_bot_api = LineBotApi('c7SLBPl7Z9CGqnurM2NvLlNJug2HrjrsLuudsGZwmFYuUCTcVtq+uLO7ppznEZ63HbCkB3dGxmzkRGkEzGfnIYFs7Ni3E7ay8f70eO8DYYTTWKnobLy+89Ydb0kAIWzmPd+k+pBwOfpeANSfCy0mXQdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('a8fa836c8d1af60d13fd4f4fee5d6213')
+line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
+handler = WebhookHandler('YOUR_CHANNEL_SECRET')
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model_cache = {}
