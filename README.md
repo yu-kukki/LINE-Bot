@@ -2,7 +2,8 @@
 
 ## 概要
 
-学習済みモデルお試しbotは、Pythonで開発されたLINE BOTです。ユーザーが画像を送信すると、事前に学習済みのPytorchモデルを使用して画像分類を行い、その結果をユーザーに返信します。ユーザーはテキストメッセージでモデル名を指定することで、使用するモデルを切り替えることができます。
+学習済みモデルお試しbotは、Pythonで開発されたLINE BOTです。
+ユーザーが画像を送信すると、事前に学習済みのPyTorchモデルを使用して画像分類を行い、その結果をユーザーに返信します。ユーザーはテキストメッセージでモデル名を指定することで、使用するモデルを切り替えることができます。
 
 ## 動作例
 
@@ -41,8 +42,11 @@ line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
 handler = WebhookHandler('YOUR_CHANNEL_SECRET')
 ```
 
-7. app.pyファイルを開き、チャネルアクセストークンとチャネルシークレットを設定します。
+7. BOTを起動します。
+
+```python
 python app.py
+```
 
 8. ngrokを使用してローカルサーバーを公開し、LINE DevelopersコンソールでWebhook URLを設定します。
 9. LINEアプリでBOTを友達に追加し、画像を送信して動作を確認します。
